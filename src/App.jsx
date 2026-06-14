@@ -1,5 +1,5 @@
 import pfp from "./assets/pfp.png";
-import { useRPGSounds } from "./hooks/UseRPGSounds";
+import { useRPGSounds } from "./hooks/useRPGSounds";
 import { ParticleConstellation } from "./components/ParticleConstellation";
 import { BossIntro } from "./components/BossIntro";
 import { useEffect, useState } from "react";
