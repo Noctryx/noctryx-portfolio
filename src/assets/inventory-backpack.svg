@@ -1,0 +1,41 @@
+<svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Backpack main body -->
+  <path d="M60 50C60 50 55 70 55 100C55 130 60 140 70 145L130 145C140 140 145 130 145 100C145 70 140 50 140 50" 
+        fill="#C17849" stroke="#8B5A3C" stroke-width="2" stroke-linejoin="round"/>
+  
+  <!-- Top opening -->
+  <ellipse cx="100" cy="50" rx="40" ry="15" fill="#A0654A" stroke="#8B5A3C" stroke-width="2"/>
+  
+  <!-- Left strap -->
+  <path d="M70 50Q60 40 60 20" stroke="#8B5A3C" stroke-width="8" fill="none" stroke-linecap="round"/>
+  
+  <!-- Right strap -->
+  <path d="M130 50Q140 40 140 20" stroke="#8B5A3C" stroke-width="8" fill="none" stroke-linecap="round"/>
+  
+  <!-- Strap connection at top -->
+  <rect x="55" y="15" width="90" height="8" rx="4" fill="#A0654A" stroke="#8B5A3C" stroke-width="1"/>
+  
+  <!-- Drawstring left -->
+  <path d="M85 55Q80 70 85 90" stroke="#8B5A3C" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Drawstring right -->
+  <path d="M115 55Q120 70 115 90" stroke="#8B5A3C" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Drawstring knot left -->
+  <circle cx="80" cy="95" r="4" fill="#8B5A3C"/>
+  
+  <!-- Drawstring knot right -->
+  <circle cx="120" cy="95" r="4" fill="#8B5A3C"/>
+  
+  <!-- Bottom stitching detail -->
+  <path d="M70 140L130 140" stroke="#8B5A3C" stroke-width="2" stroke-dasharray="5,3" opacity="0.6"/>
+  
+  <!-- Shading highlight -->
+  <ellipse cx="85" cy="90" rx="15" ry="25" fill="#D4945D" opacity="0.4"/>
+  
+  <!-- Side pocket left -->
+  <rect x="62" y="80" width="12" height="25" rx="2" fill="none" stroke="#8B5A3C" stroke-width="1.5" opacity="0.5"/>
+  
+  <!-- Side pocket right -->
+  <rect x="126" y="80" width="12" height="25" rx="2" fill="none" stroke="#8B5A3C" stroke-width="1.5" opacity="0.5"/>
+</svg>

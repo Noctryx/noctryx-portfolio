@@ -1,0 +1,428 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  color-scheme: dark;
+  --app-bg: #000000;
+  --app-bg-alt: #0a0a0a;
+  --app-surface: #18181b;
+  --app-surface-soft: #27272a;
+  --app-surface-muted: #3f3f46;
+  --app-border: #27272a;
+  --app-border-strong: #3f3f46;
+  --app-text: #ffffff;
+  --app-text-muted: #a1a1aa;
+  --app-placeholder: #71717a;
+
+  /* RPG Theme Colors */
+  --rpg-primary: #22c55e;
+  --rpg-accent-gold: #d4af37;
+  --rpg-accent-purple: #4c1d95;
+  --rpg-accent-bronze: #b87333;
+  --rpg-stat-strength: #ef4444;
+  --rpg-stat-intelligence: #3b82f6;
+  --rpg-stat-dexterity: #eab308;
+  --rpg-stat-constitution: #22c55e;
+}
+
+.dark {
+  color-scheme: dark;
+  --app-bg: #000000;
+  --app-bg-alt: #0a0a0a;
+  --app-surface: #18181b;
+  --app-surface-soft: #27272a;
+  --app-surface-muted: #3f3f46;
+  --app-border: #27272a;
+  --app-border-strong: #3f3f46;
+  --app-text: #ffffff;
+  --app-text-muted: #a1a1aa;
+  --app-placeholder: #71717a;
+
+  /* RPG Theme Colors - Dark Mode */
+  --rpg-primary: #22c55e;
+  --rpg-accent-gold: #fbbf24;
+  --rpg-accent-purple: #9333ea;
+  --rpg-accent-bronze: #f97316;
+  --rpg-stat-strength: #f87171;
+  --rpg-stat-intelligence: #60a5fa;
+  --rpg-stat-dexterity: #facc15;
+  --rpg-stat-constitution: #4ade80;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(34, 197, 94, 0.06),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at bottom left,
+      rgba(16, 185, 129, 0.04),
+      transparent 30%
+    ),
+    var(--app-bg);
+  color: var(--app-text);
+  font-family: Arial, sans-serif;
+}
+
+::selection {
+  background: rgba(34, 197, 94, 0.22);
+  color: var(--app-text);
+}
+
+/* Force-hide native cursor globally so the custom cursor is always visible */
+html,
+body,
+* {
+  cursor: none !important;
+}
+
+/* Arcane buttons adapted from the provided decorative line style */
+.arcane-btn {
+  --line_color: var(--rpg-primary);
+  --back_color: var(--app-surface-soft);
+  position: relative;
+  z-index: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 220px;
+  height: 56px;
+  padding: 0 24px;
+  text-decoration: none;
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--line_color);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border: none;
+  background: transparent;
+  transition: all 0.28s ease;
+}
+
+.arcane-btn--sm {
+  min-width: 180px;
+  height: 52px;
+}
+
+.arcane-btn--md {
+  min-width: 220px;
+}
+
+.arcane-btn--full {
+  width: 100%;
+}
+
+.arcane-btn--primary {
+  --line_color: var(--rpg-primary);
+  --back_color: var(--app-surface-soft);
+}
+
+.arcane-btn--muted {
+  --line_color: var(--app-text-muted);
+  --back_color: var(--app-surface);
+}
+
+.arcane-btn__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.arcane-btn__text svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.arcane-btn::before,
+.arcane-btn::after,
+.arcane-btn__text::before,
+.arcane-btn__text::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--line_color);
+  transition: all 0.5s ease;
+}
+
+.arcane-btn::before {
+  top: 0;
+  left: 54px;
+  width: calc(100% - 56px * 2 - 16px);
+}
+
+.arcane-btn::after {
+  top: 0;
+  right: 54px;
+  width: 8px;
+}
+
+.arcane-btn__text::before {
+  bottom: 0;
+  right: 54px;
+  width: calc(100% - 56px * 2 - 16px);
+}
+
+.arcane-btn__text::after {
+  bottom: 0;
+  left: 54px;
+  width: 8px;
+}
+
+.arcane-btn__line {
+  position: absolute;
+  top: 0;
+  width: 56px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.arcane-btn__line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 150%;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 300px;
+  border: solid 3px var(--line_color);
+}
+
+.arcane-btn__line:nth-child(1),
+.arcane-btn__line:nth-child(1)::before {
+  left: 0;
+}
+
+.arcane-btn__line:nth-child(2),
+.arcane-btn__line:nth-child(2)::before {
+  right: 0;
+}
+
+.arcane-btn:hover {
+  letter-spacing: 0.2em;
+  color: var(--app-text);
+  filter: drop-shadow(
+    0 0 10px color-mix(in srgb, var(--line_color) 50%, transparent)
+  );
+}
+
+.arcane-btn:hover::before,
+.arcane-btn:hover .arcane-btn__text::before {
+  width: 8px;
+}
+
+.arcane-btn:hover::after,
+.arcane-btn:hover .arcane-btn__text::after {
+  width: calc(100% - 56px * 2 - 16px);
+}
+
+.arcane-btn:focus-visible {
+  outline: 2px solid var(--line_color);
+  outline-offset: 3px;
+}
+
+.arcane-btn:disabled {
+  opacity: 0.55;
+  filter: none;
+  letter-spacing: 0.12em;
+}
+
+.arcane-btn:disabled:hover {
+  color: var(--line_color);
+}
+
+.arcane-btn:disabled .arcane-btn__drow1,
+.arcane-btn:disabled .arcane-btn__drow2 {
+  animation: none;
+}
+
+.arcane-btn__drow1,
+.arcane-btn__drow2 {
+  position: absolute;
+  z-index: -1;
+  border-radius: 16px;
+  transform-origin: 16px 16px;
+}
+
+.arcane-btn__drow1 {
+  top: -16px;
+  left: 40px;
+  width: 32px;
+  height: 0;
+  transform: rotate(30deg);
+}
+
+.arcane-btn__drow2 {
+  top: 44px;
+  left: 77px;
+  width: 32px;
+  height: 0;
+  transform: rotate(-127deg);
+}
+
+.arcane-btn__drow1::before,
+.arcane-btn__drow1::after,
+.arcane-btn__drow2::before,
+.arcane-btn__drow2::after {
+  content: "";
+  position: absolute;
+}
+
+.arcane-btn__drow1::before {
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 32px;
+  border-radius: 16px;
+  transform-origin: 16px 16px;
+  transform: rotate(-60deg);
+}
+
+.arcane-btn__drow1::after {
+  top: -10px;
+  left: 45px;
+  width: 0;
+  height: 32px;
+  border-radius: 16px;
+  transform-origin: 16px 16px;
+  transform: rotate(69deg);
+}
+
+.arcane-btn__drow2::before {
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 32px;
+  border-radius: 16px;
+  transform-origin: 16px 16px;
+  transform: rotate(-146deg);
+}
+
+.arcane-btn__drow2::after {
+  bottom: 26px;
+  left: -40px;
+  width: 0;
+  height: 32px;
+  border-radius: 16px;
+  transform-origin: 16px 16px;
+  transform: rotate(-262deg);
+}
+
+.arcane-btn__drow1,
+.arcane-btn__drow1::before,
+.arcane-btn__drow1::after,
+.arcane-btn__drow2,
+.arcane-btn__drow2::before,
+.arcane-btn__drow2::after {
+  background: var(--back_color);
+}
+
+.arcane-btn:hover .arcane-btn__drow1 {
+  animation: arcane-drow1 ease-in 0.06s;
+  animation-fill-mode: forwards;
+}
+
+.arcane-btn:hover .arcane-btn__drow1::before {
+  animation: arcane-drow2 linear 0.08s 0.06s;
+  animation-fill-mode: forwards;
+}
+
+.arcane-btn:hover .arcane-btn__drow1::after {
+  animation: arcane-drow3 linear 0.03s 0.14s;
+  animation-fill-mode: forwards;
+}
+
+.arcane-btn:hover .arcane-btn__drow2 {
+  animation: arcane-drow4 linear 0.06s 0.2s;
+  animation-fill-mode: forwards;
+}
+
+.arcane-btn:hover .arcane-btn__drow2::before {
+  animation: arcane-drow3 linear 0.03s 0.26s;
+  animation-fill-mode: forwards;
+}
+
+.arcane-btn:hover .arcane-btn__drow2::after {
+  animation: arcane-drow5 linear 0.06s 0.32s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes arcane-drow1 {
+  0% {
+    height: 0;
+  }
+
+  100% {
+    height: 100px;
+  }
+}
+
+@keyframes arcane-drow2 {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0;
+  }
+
+  11% {
+    opacity: 1;
+  }
+
+  100% {
+    width: 120px;
+  }
+}
+
+@keyframes arcane-drow3 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 80px;
+  }
+}
+
+@keyframes arcane-drow4 {
+  0% {
+    height: 0;
+  }
+
+  100% {
+    height: 120px;
+  }
+}
+
+@keyframes arcane-drow5 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 124px;
+  }
+}
+
+@media (max-width: 768px) {
+  .arcane-btn {
+    min-width: 170px;
+    height: 52px;
+    padding: 0 16px;
+    font-size: 0.8rem;
+  }
+}

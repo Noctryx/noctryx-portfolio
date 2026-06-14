@@ -1,0 +1,120 @@
+export const PROJECTS = [
+  {
+    title: "VenkyOS",
+    tier: "main",
+    desc: "A personal life operating system built to track, reflect on, and improve every area of daily life through one unified productivity ecosystem.",
+    stack: "Vanilla JS • Supabase • PWA • Chart.js",
+    role: "Owned product design, recurring task logic, analytics, and cross-device syncing.",
+    impact:
+      "Replaced scattered reminders with one workflow that makes consistency measurable.",
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "PWA",
+      "REST API",
+      "GitHub",
+      "Supabase",
+      "SQLite",
+      "Full Stack Dev",
+    ],
+    xpProfile: {
+      complexity: 5,
+      scope: 5,
+      breadth: 5,
+      impact: 5,
+    },
+    details: {
+      purpose:
+        "Built to replace scattered reminders, notes, and mental overhead with one disciplined personal operating system.",
+      features: [
+        "Today / Week / Month planning views",
+        "Life area balance tracking",
+        "90-day consistency heatmap",
+        "Recurring task engine",
+        "Browser notifications",
+        "Offline-first support",
+        "Cross-device Supabase sync",
+        "CSV export system",
+      ],
+      github: "https://github.com/Noctryx/venky-os.git",
+      live: "https://noctryx.github.io/venky-os",
+    },
+  },
+  {
+    title: "Engineer360",
+    tier: "main",
+    desc: "An AI-powered holistic performance analytics platform aligning technical career readiness with burnout intelligence for engineering students.",
+    stack: "HTML/CSS • JavaScript • FastAPI • SQLite",
+    role: "Shaped the analytics dashboard, recommendations, and student history model.",
+    impact:
+      "Frames skill gaps and burnout risk in one view so students can prepare with more intent.",
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Python",
+      "SQLite",
+      "REST API",
+      "AI/ML",
+      "Problem Solving",
+    ],
+    xpProfile: {
+      complexity: 5,
+      scope: 5,
+      breadth: 4,
+      impact: 5,
+    },
+    details: {
+      purpose:
+        "Built to quantify both technical skill alignment and mental burnout risk so engineering students can prepare strategically, not blindly.",
+      features: [
+        "Role-based skill gap analysis",
+        "Burnout risk scoring engine",
+        "Adaptive recommendation matrix",
+        "Persistent student history records",
+        "REST API backend endpoints",
+        "Glassmorphism analytics dashboard",
+      ],
+      github: "https://github.com/Noctryx/Engineer360.git",
+      live: "#",
+    },
+  },
+  {
+    title: "Weather Forecasting App",
+    tier: "side",
+    desc: "A responsive real-time weather intelligence application that fetches live atmospheric conditions and renders forecast data through a clean user-focused interface.",
+    stack: "Python • Weather API • HTML/CSS • JavaScript",
+    role: "Implemented API fetching, dynamic rendering, and the responsive interface.",
+    impact:
+      "Turns live weather data into a fast, readable utility instead of a raw API dump.",
+    skills: [
+      "Python",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "REST API",
+      "Problem Solving",
+    ],
+    xpProfile: {
+      complexity: 3,
+      scope: 3,
+      breadth: 3,
+      impact: 3,
+    },
+    details: {
+      purpose:
+        "Built as an end-to-end API integration project to transform raw weather data into an accessible live monitoring utility.",
+      features: [
+        "Real-time temperature retrieval",
+        "Humidity and wind condition display",
+        "Location-based weather search",
+        "Dynamic weather icon rendering",
+        "Clean responsive interface",
+        "Live API data fetching",
+      ],
+      github: "https://github.com/Noctryx/Weather-App.git",
+      live: "https://noctryx.github.io/Weather-App/",
+    },
+  },
+];
