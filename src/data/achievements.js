@@ -1,5 +1,13 @@
 export const ACHIEVEMENTS = [
   {
+    id: "vibe2ship",
+    title: "Innovation Vanguard",
+    description: "Submitted CivicPulse AI to Google's VIBE2SHIP Hackathon",
+    icon: "🛰️",
+    earned: true,
+    xp: 220,
+  },
+  {
     id: "hackathon_winner",
     title: "Quest Conqueror",
     description: "3rd Prize at College Level Hackathon",

@@ -9,9 +9,14 @@ export const CLASSES = {
     heroTagline: "with disciplined execution.",
     heroSubline:
       "I build practical web products that combine clean UI, reliable logic, and enough technical depth to matter in the real world.",
-    featuredProject: "VenkyOS",
+    featuredProject: "CivicPulse AI",
     skillPriority: ["Full Stack Dev", "Problem Solving", "Git", "REST API"],
-    projectPriority: ["VenkyOS", "Engineer360", "Weather Forecasting App"],
+    projectPriority: [
+      "CivicPulse AI",
+      "VenkyOS",
+      "Engineer360",
+      "Weather Forecasting App",
+    ],
     stats: {
       strength: 7,
       intelligence: 8,
@@ -29,7 +34,16 @@ export const CLASSES = {
     heroSubline:
       "I lean into analytical products, applied machine learning, and backend systems that make intelligence useful.",
     featuredProject: "Engineer360",
-    skillPriority: ["AI/ML", "Python", "SQL", "REST API"],
+    skillPriority: [
+      "AI Integration",
+      "Gemini API",
+      "Firebase",
+      "Python",
+      "React",
+      "AI/ML",
+      "SQL",
+      "REST API",
+    ],
     projectPriority: [
       "CivicPulse AI",
       "Engineer360",
@@ -53,9 +67,14 @@ export const CLASSES = {
     heroTagline: "with deliberate motion and clarity.",
     heroSubline:
       "I care about visual hierarchy, responsive interaction, and the small details that make a product feel finished.",
-    featuredProject: "Weather Forecasting App",
+    featuredProject: "CivicPulse AI",
     skillPriority: ["CSS", "HTML", "JavaScript", "PWA"],
-    projectPriority: ["Weather Forecasting App", "VenkyOS", "Engineer360"],
+    projectPriority: [
+      "CivicPulse AI",
+      "VenkyOS",
+      "Weather Forecasting App",
+      "Engineer360",
+    ],
     stats: {
       strength: 7,
       intelligence: 8,
@@ -73,9 +92,14 @@ export const CLASSES = {
     heroTagline: "and unexpected solution paths.",
     heroSubline:
       "I like moving across frontend, backend, and AI tooling when the problem rewards broad technical range.",
-    featuredProject: "Weather Forecasting App",
+    featuredProject: "VenkyOS",
     skillPriority: ["PWA", "Supabase", "Python", "REST API"],
-    projectPriority: ["Weather Forecasting App", "Engineer360", "VenkyOS"],
+    projectPriority: [
+      "CivicPulse AI",
+      "Weather Forecasting App",
+      "Engineer360",
+      "VenkyOS",
+    ],
     stats: {
       strength: 8,
       intelligence: 8,
