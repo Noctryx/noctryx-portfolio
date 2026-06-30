@@ -1,5 +1,59 @@
 export const PROJECTS = [
   {
+  title: "CivicPulse AI",
+  tier: "main",
+  desc: "An AI-powered civic intelligence platform that transforms citizen reports into prioritized, location-aware incidents through multimodal analysis, predictive severity scoring, and real-time municipal workflows.",
+  stack:
+    "React • TypeScript • Firebase • Gemini API • Google Maps API",
+  role:
+    "Led the product architecture, AI workflow design, analytics, reporting pipeline, and real-time municipal operations.",
+  impact:
+    "Transforms citizen reports into AI-prioritized operational intelligence, enabling municipalities to respond faster through automated severity analysis, dispatch briefings, and real-time analytics.",
+  skills: [
+    "React",
+    "TypeScript",
+    "Firebase",
+    "Gemini API",
+    "Google Maps API",
+    "REST API",
+    "AI Integration",
+    "Computer Vision",
+    "Speech Recognition",
+    "Real-time Systems",
+    "Full Stack Dev",
+  ],
+  xpProfile: {
+    complexity: 5,
+    scope: 5,
+    breadth: 5,
+    impact: 5,
+  },
+  details: {
+    purpose:
+      "Built to modernize civic issue reporting by combining AI, geospatial intelligence, and real-time collaboration into a unified platform that helps both citizens and municipal authorities respond more efficiently.",
+    features: [
+      "AI-powered issue classification",
+      "Predictive severity scoring",
+      "Voice-to-text complaint reporting",
+      "Camera capture and image uploads",
+      "Automatic GPS location detection",
+      "Duplicate report detection",
+      "Community confirmation system",
+      "Interactive Google Maps visualization",
+      "Real-time analytics dashboard",
+      "Administrative case management",
+      "AI-generated dispatch briefings",
+      "AI City Assistant",
+      "Firebase real-time synchronization",
+      "Push notifications",
+      "Google Authentication",
+      "Responsive modern interface",
+    ],
+    github: "https://github.com/Noctryx/civicpulse-ai.git",
+    live: "https://civicpulse-ai-1092231268712.asia-southeast1.run.app",
+  },
+  },
+  {
     title: "VenkyOS",
     tier: "main",
     desc: "A personal life operating system built to track, reflect on, and improve every area of daily life through one unified productivity ecosystem.",
