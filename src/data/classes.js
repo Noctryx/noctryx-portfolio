@@ -30,7 +30,12 @@ export const CLASSES = {
       "I lean into analytical products, applied machine learning, and backend systems that make intelligence useful.",
     featuredProject: "Engineer360",
     skillPriority: ["AI/ML", "Python", "SQL", "REST API"],
-    projectPriority: ["Engineer360", "VenkyOS", "Weather Forecasting App"],
+    projectPriority: [
+      "CivicPulse AI",
+      "Engineer360",
+      "VenkyOS",
+      "Weather Forecasting App",
+    ],
     stats: {
       strength: 6,
       intelligence: 9,

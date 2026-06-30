@@ -3,29 +3,92 @@ export const SKILL_GROUPS = [
     key: "frontend",
     icon: "⚔️",
     label: "Frontend Spells",
-    skills: ["HTML", "CSS", "PWA", "REST API"],
+    skills: ["HTML", "CSS", "React", "TypeScript", "PWA", "REST API"],
   },
   {
     key: "backend",
     icon: "🛡️",
     label: "Backend Incantations",
-    skills: ["C++", "Python", "JavaScript", "SQL"],
+    skills: ["C++", "Python", "JavaScript", "SQL", "Firebase"],
   },
   {
     key: "tools",
     icon: "📜",
     label: "Utility Artifacts",
-    skills: ["Git", "GitHub", "Supabase", "SQLite"],
+    skills: [
+      "Git",
+      "GitHub",
+      "Supabase",
+      "SQLite",
+      "Gemini API",
+      "Google Maps API",
+    ],
   },
   {
     key: "concepts",
     icon: "🔮",
     label: "Warrior Skills",
-    skills: ["DSA", "Full Stack Dev", "AI/ML", "Problem Solving"],
+    skills: [
+      "DSA",
+      "Full Stack Dev",
+      "AI/ML",
+      "AI Integration",
+      "Real-time Systems",
+      "Problem Solving",
+    ],
   },
 ];
 
 export const SKILL_DETAILS = {
+  React: {
+    category: "Frontend Spells",
+    level: 82,
+    usedIn:
+      "CivicPulse AI's interactive dashboard, reporting flows, and component-driven UI.",
+    proficiency: "Advanced",
+  },
+  TypeScript: {
+    category: "Frontend Spells",
+    level: 78,
+    usedIn:
+      "Built type-safe React components and AI-powered civic workflows in CivicPulse AI.",
+    proficiency: "Advanced",
+  },
+  Firebase: {
+    category: "Backend Incantations",
+    level: 82,
+    usedIn:
+      "Authentication, Firestore, notifications, and real-time synchronization in CivicPulse AI.",
+    proficiency: "Advanced",
+  },
+  "Gemini API": {
+    category: "Utility Artifacts",
+    level: 80,
+    usedIn:
+      "Integrated multimodal AI for issue classification, dispatch generation, and assistant features.",
+    proficiency: "Advanced",
+  },
+  "Google Maps API": {
+    category: "Utility Artifacts",
+    level: 78,
+    usedIn:
+      "Interactive incident mapping, geolocation, and spatial visualization in CivicPulse AI.",
+    proficiency: "Strong",
+  },
+  "AI Integration": {
+    category: "Warrior Skills",
+    level: 84,
+    usedIn:
+      "Designed AI-powered workflows combining vision, language, and civic intelligence.",
+    proficiency: "Advanced",
+  },
+  "Real-time Systems": {
+    category: "Warrior Skills",
+    level: 80,
+    usedIn:
+      "Implemented live incident synchronization, notifications, and collaborative reporting.",
+    proficiency: "Advanced",
+  },
   "C++": {
     category: "Backend Incantations",
     level: 85,
@@ -41,7 +104,7 @@ export const SKILL_DETAILS = {
   JavaScript: {
     category: "Backend Incantations",
     level: 85,
-    usedIn: "VenkyOS, Engineer360, and interactive UI logic.",
+    usedIn: "VenkyOS, Engineer360, CivicPulse AI, and interactive UI logic.",
     proficiency: "Advanced",
   },
   SQL: {
@@ -71,7 +134,8 @@ export const SKILL_DETAILS = {
   "REST API": {
     category: "Frontend Spells",
     level: 80,
-    usedIn: "Fetching weather and analytics data into usable views.",
+    usedIn:
+      "Integrated weather, AI, geolocation, and analytics services across multiple projects.",
     proficiency: "Advanced",
   },
   Git: {
@@ -107,19 +171,22 @@ export const SKILL_DETAILS = {
   "Full Stack Dev": {
     category: "Warrior Skills",
     level: 85,
-    usedIn: "End-to-end product delivery across projects.",
+    usedIn:
+      "Built complete products from frontend experiences to AI-powered backend systems.",
     proficiency: "Advanced",
   },
   "AI/ML": {
     category: "Warrior Skills",
     level: 78,
-    usedIn: "Engineer360 and AI-focused experimentation.",
+    usedIn:
+      "Engineer360 and CivicPulse AI through intelligent automation and predictive workflows.",
     proficiency: "Advanced",
   },
   "Problem Solving": {
     category: "Warrior Skills",
     level: 88,
-    usedIn: "Feature planning, debugging, and system tradeoffs.",
+    usedIn:
+      "Architected scalable solutions, optimized workflows, and resolved complex engineering challenges.",
     proficiency: "Expert",
   },
 };
