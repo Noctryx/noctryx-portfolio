@@ -20,6 +20,8 @@ export const PROJECTS = [
     "Computer Vision",
     "Speech Recognition",
     "Real-time Systems",
+    "Problem Solving",
+    "AI/ML",
     "Full Stack Dev",
   ],
   xpProfile: {
